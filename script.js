@@ -123,9 +123,11 @@ CONFIG.films.forEach((film, index) => {
 if (CONFIG.date) {
   const date = new Date(`${CONFIG.date}T12:00:00`);
   if (!Number.isNaN(date.getTime())) {
-    document.querySelector("#date-value").textContent = new Intl.DateTimeFormat("it-IT", {
+    const formattedDate = new Intl.DateTimeFormat("it-IT", {
       day: "numeric", month: "long", year: "numeric",
     }).format(date);
+    document.querySelector("#date-value").textContent = formattedDate;
+    document.querySelector("#invitation-date-value").textContent = formattedDate;
   }
 }
 if (CONFIG.time) document.querySelector("#time-value").textContent = CONFIG.time;

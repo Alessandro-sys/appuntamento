@@ -43,6 +43,8 @@ main { padding: 34px 0 0; }
 h1 { font: 400 clamp(40px, 4.6vw, 59px)/1.08 var(--serif); letter-spacing: -1.6px; margin: 0; }
 h1 em { color: var(--purple); font-style: normal; }
 .intro { color: var(--muted); font-size: 13px; line-height: 1.9; margin: 22px 0 0; }
+.invitation-date { display: inline-flex; align-items: center; gap: 9px; margin: 18px 0 0; padding: 9px 17px; border: 1px solid var(--line); border-radius: 24px; color: var(--purple); background: #f4edf8; font-size: 12px; }
+.invitation-date > span:first-child { font-size: 18px; line-height: 1; }
 .button { display: inline-flex; align-items: center; justify-content: center; gap: 22px; min-height: 49px; border-radius: 9px; padding: 12px 25px; border: 1px solid transparent; cursor: pointer; font-size: 12px; font-weight: 500; }
 .primary { background: var(--purple); color: white; box-shadow: 0 5px 13px #79509a18; transition: background .2s, transform .2s; }
 .primary:hover { background: #684086; transform: translateY(-2px); }
