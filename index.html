@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="it">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#ede4f5">
+    <meta name="description" content="Un piccolo invito per una serata speciale, insieme.">
+    <title>Io, te e una serata insieme</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ctext y='.9em' font-size='54'%3E💜%3C/text%3E%3C/svg%3E">
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="site-header">
+        <a class="wordmark" href="./index.html" aria-label="Ricomincia l'invito"><span aria-hidden="true">♡</span></a>
+        <span class="header-note">invito speciale</span>
+      </header>
+
+      <main>
+        <ol class="progress" aria-label="Le tappe del nostro appuntamento">
+          <li class="active" aria-current="step"><span>01</span> L'invito</li>
+          <li><span>02</span> Il film</li>
+          <li><span>03</span> Noi due</li>
+        </ol>
+
+        <section class="card invite-screen" id="invitation" aria-labelledby="invitation-title">
+          <div class="envelope-art" aria-hidden="true">
+            <span class="spark spark-one">✧</span><span class="spark spark-two">✧</span>
+            <span class="floating-heart">♡</span>
+            <div class="letter"><span>per te</span><span>♡</span></div>
+            <div class="envelope"><span>♥</span></div>
+          </div>
+          <p class="eyebrow">HO UNA PICCOLA DOMANDA…</p>
+          <h1 id="invitation-title" tabindex="-1">Appuntamento<br><em>romantico insieme?</em></h1>
+          <p class="intro">Un bel film, videochiamata e la mia persona preferita.<br class="desktop-break">Ti va di passare questa serata insieme?</p>
+          <div class="answer-area" id="answer-area">
+            <button class="button primary yes-button" id="yes-button" type="button">Sì, mi va <span aria-hidden="true">♡</span></button>
+            <button class="button no-button" id="no-button" type="button" aria-label="No, ma questo tasto scappa">No</button>
+          </div>
+          <p class="little-note">mi sa che il “No” è un po' timido...</p>
+        </section>
+
+        <section class="card film-screen" id="films" aria-labelledby="films-title" hidden>
+          <p class="eyebrow">IL PROGRAMMA È QUASI PERFETTO</p>
+          <h1 id="films-title" tabindex="-1">Scegli tu <em>il film.</em></h1>
+          <div class="film-grid" id="film-grid"></div>
+
+        </section>
+
+        <section class="card reaction-screen" id="reaction" aria-labelledby="reaction-title" hidden>
+          <div class="reaction-heart" aria-hidden="true">♡<span>✧</span></div>
+          <p class="eyebrow">TI CONOSCO UN PO' TROPPO BENE</p>
+          <h1 id="reaction-title" tabindex="-1">Lo sapevo che avresti<br><em>scelto questo.</em></h1>
+          <p class="intro secret">(Non cliccare sugli altri, ovviamente non c'è scritta la stessa cosa...)</p>
+          <p class="chosen-film" id="chosen-film"></p>
+          <button class="button primary" id="continue-button" type="button">Allora è un appuntamento <span aria-hidden="true">→</span></button>
+        </section>
+
+        <section class="card final-screen" id="date" aria-labelledby="date-title" hidden>
+          <div class="small-heart" aria-hidden="true">♡</div>
+          <p class="eyebrow">MANCA SOLO UNA COSA: TU</p>
+          <h1 id="date-title" tabindex="-1">Io e te.<br><em>Segna la data</em></h1>
+          <p class="intro">Il nostro piccolo programma per una bella serata.</p>
+          <div class="date-details">
+            <div><span class="detail-label">IL GIORNO</span><p id="date-value">Da scegliere</p></div>
+            <span class="detail-heart" aria-hidden="true">♡</span>
+            <div><span class="detail-label">L'ORA</span><p id="time-value">Da scegliere</p></div>
+          </div>
+          <p class="film-summary">Sul nostro schermo: <strong id="film-summary"></strong></p>
+          <div class="signoff"><p id="greeting">Non vedo l'ora. A presto, tu.</p><span>Con tanto amore ♡</span></div>
+        </section>
+        <noscript><p class="noscript">Per aprire l'invito e scegliere il film, attiva JavaScript nel browser.</p></noscript>
+      </main>
+
+      <footer>fatto con amore <span aria-hidden="true">♡</span> solo per te</footer>
+    </div>
+  </body>
+</html>
